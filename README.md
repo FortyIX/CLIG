@@ -1,4 +1,4 @@
-# Keats Crawler [![Build Status](https://travis-ci.org/{ORG-or-USERNAME}/{REPO-NAME}.png?branch=master)](https://travis-ci.org/FortyIX/Keats-crawler)
+# Keats Crawler [![Build Status](https://travis-ci.org/FortyIX/Keats-crawler.png?branch=master)](https://travis-ci.org/FortyIX/Keats-crawler)
 
 A Command line program which crawling Keats which is a student portal of KCL to fetch some usful informaition
 such as Course and Grades information with no need to open the browser. Student ID and password are required
