@@ -8,8 +8,13 @@ from main import Spider
 
 hi=Spider()
 
+Spider.user=input("What is your K number ?")
+Spider.passw=input("and your password?")
+
+
 
 print(hi.getAc())
+
 
 #get crweler to work
 process = CrawlerProcess()
