@@ -7,7 +7,7 @@ from twisted.internet import reactor
 from loginform import fill_login_form
 
 
-class keats(scrapy.Spider):
+class Spider(scrapy.Spider):
 
 
 

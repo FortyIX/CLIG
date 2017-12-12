@@ -2,13 +2,13 @@
 
 from scrapy.crawler import CrawlerProcess
 
-from main import keats
+from main import Spider
 
 
 
-hi=keats()
+hi=Spider()
 
-#hi.setInfo("k1763499","Fu07956496084")
+
 print(hi.getAc())
 
 process = CrawlerProcess()
