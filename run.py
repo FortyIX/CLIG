@@ -9,8 +9,9 @@ from main import Spider
 hi=Spider()
 
 Spider.user=input("What is your K number ?")
+#get K number
 Spider.passw=input("and your password?")
-
+#get password
 
 
 print(hi.getAc())
