@@ -2,9 +2,7 @@
 
 from scrapy.crawler import CrawlerProcess
 
-from main import Spider
-
-
+from src.main import Spider
 
 hi=Spider()
 

@@ -1,10 +1,6 @@
 import scrapy
-from scrapy.crawler import CrawlerProcess
-from twisted.internet import reactor
 
-
-
-from loginform import fill_login_form
+from src.loginform import fill_login_form
 
 
 class Spider(scrapy.Spider):
