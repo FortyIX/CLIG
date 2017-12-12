@@ -13,8 +13,8 @@ class keats(scrapy.Spider):
 
     name = 'login'
     start_urls = ['https://login-keats.kcl.ac.uk/']
-    user="k1763499"
-    passw="Fu07956496084"
+    user="<required>"
+    passw="<required>"
     list_1=[]
 
     def parse(self, response):
