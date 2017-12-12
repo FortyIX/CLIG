@@ -11,10 +11,9 @@ hi=Spider()
 
 print(hi.getAc())
 
+#get crweler to work
 process = CrawlerProcess()
-
 process.crawl(hi)
-
 process.start()
 
 
