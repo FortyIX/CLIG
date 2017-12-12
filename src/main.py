@@ -1,6 +1,6 @@
 import scrapy
 
-from src.loginform import fill_login_form
+from loginform import fill_login_form
 
 
 class Spider(scrapy.Spider):

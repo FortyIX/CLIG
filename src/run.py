@@ -2,13 +2,13 @@
 
 from scrapy.crawler import CrawlerProcess
 
-from src.main import Spider
+import main
 
-hi=Spider()
+hi=main.Spider()
 
-Spider.user=input("What is your K number ?")
+main.Spider.user=input("What is your K number ?")
 #get K number
-Spider.passw=input("and your password?")
+main.Spider.passw=input("and your password?")
 #get password
 
 
@@ -23,7 +23,7 @@ process.start()
 
 
 print("++++++++++++++++++++++++++++++++++++++++++++++++++++++++++")
-for i in Spider.getList(Spider):
+for i in main.Spider.getList(main.Spider):
     print("\b"+"\b"+ i )
     print("|++++++++++++++++++++++++++++++++++++++++++++++++++++++++|")
 
