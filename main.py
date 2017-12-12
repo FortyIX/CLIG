@@ -39,5 +39,4 @@ class Spider(scrapy.Spider):
 
 
 
-    def getAc(self):
-        return self.user,self.passw
+    
