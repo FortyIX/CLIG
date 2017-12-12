@@ -1,4 +1,6 @@
-# Keats Crawler [![Build Status](https://travis-ci.org/FortyIX/Keats-crawler.png?branch=master)](https://travis-ci.org/FortyIX/Keats-crawler)
+# Keats Crawler 
+
+### [![Build Status](https://travis-ci.org/FortyIX/Keats-crawler.png?branch=master)](https://travis-ci.org/FortyIX/Keats-crawler) [![GitHub license](https://img.shields.io/github/license/FortyIX/Keats-Crawler.svg)](https://github.com/FortyIX/Keats-Crawler/blob/master/LICENSE) [![GitHub issues](https://img.shields.io/github/issues/FortyIX/Keats-Crawler.svg)](https://github.com/FortyIX/Keats-Crawler/issues)
 
 
 A program which crawling Keats which is a student portal of KCL to fetch some usful informaition
