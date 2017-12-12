@@ -5,4 +5,9 @@ python:
   - "3.2"
   - "3.3"
 # command to install dependencies
-script: python run.py
+script:
+  - python loginform.py
+  - python main.py
+  - python run.py
+
+
