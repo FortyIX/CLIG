@@ -2,7 +2,7 @@ language: python
 python:
   - "3.6" # 3.6 development branch
 
-xt
+
 # command to run tests
 script:
   - python run.py # or py.test for Python versions 3.5 and below
