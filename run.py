@@ -14,7 +14,7 @@ Spider.passw=input("and your password?")
 #get password
 
 
-print(hi.getAc())
+
 
 
 #get crweler to work
