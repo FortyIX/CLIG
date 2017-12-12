@@ -13,9 +13,10 @@ class Spider(scrapy.Spider):
 
     name = 'login'
     start_urls = ['https://login-keats.kcl.ac.uk/']
-    user="<required>"
-    passw="<required>"
+    user=""
+    passw=""
     list_1=[]
+
 
     def parse(self, response):
 
@@ -37,9 +38,6 @@ class Spider(scrapy.Spider):
 
 
 
-    def setInfo(self , ac , pas):
-        self.user=ac
-        self.passw=pas
 
     def getAc(self):
-        return self.user
+        return self.user,self.passw
