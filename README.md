@@ -12,11 +12,11 @@ such as Course and Grades information with no need to open the browser. Student 
 
 ### Development Progress
 
-* Log into Keats with code (with pre defined password) [**FINISHED**]
-* Fetch Course Information and print out [**FINISHED**]
-* Log into Keats with code (with users input) [**FINISHED**]
-* Fetch Grades Information and print out [**DEVELOPING**]
-* Buiding Graphic User Interface [**DEVELOPING**]
+- [x] Log into Keats with code (with pre defined password) 
+- [x] Fetch Course Information and print out 
+- [x] Log into Keats with code (with users input) 
+- [ ] Fetch Grades Information and print out 
+- [ ] Buiding Graphic User Interface 
 
 Following code in the **[run.py](https://github.com/FortyIX/Keats-crawler/blob/master/run.py)** defines the layout of the course information shown on the console
 
