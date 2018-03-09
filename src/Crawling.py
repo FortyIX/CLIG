@@ -11,7 +11,7 @@ import Crawler
 class Crawling:
     scanner = Crawler.Spider()
     gradeDisable = False
-    safemode = False
+    safemode = True
 
     def __init__(self):
         # init the spider instance
@@ -93,14 +93,14 @@ class Crawling:
                 self.gradeDisable = False
                 if len(sys.argv) > 2:
                     if sys.argv[2] == "-s":
-                        self.safemode = True
-                    else:
                         self.safemode = False
+                    else:
+                        self.safemode = True
                 else:
-                    self.safemode = False
+                    self.safemode = True
 
             elif sys.argv[1] == "-s":
-                self.safemode = True
+                self.safemode = False
                 if len(sys.argv) > 2:
                     if sys.argv[2] == "-g":
                         self.gradeDisable = False
@@ -108,7 +108,7 @@ class Crawling:
                         self.fgradeDisable = True
         else:
             self.gradeDisable = True
-            self.safemode = False
+            self.safemode = True
 
 
 
