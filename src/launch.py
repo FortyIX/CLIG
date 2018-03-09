@@ -1,10 +1,10 @@
-from Crawling import  Crawling
+from Crawling import  Crawl
 
 
 # Start point of the application
 
 def main():
-    spider = Crawling()
+    spider = Crawl()
     spider.crawling()
 
 if __name__ == "__main__":
