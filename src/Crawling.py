@@ -8,6 +8,8 @@ import sys
 import Crawler
 
 
+
+
 class Crawling:
     # Init the Crawler object
     scanner = Crawler.Spider()

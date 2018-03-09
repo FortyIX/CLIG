@@ -14,5 +14,8 @@ script:
 
   - python  src/launch.py -s
   - python  src/launch.py < testData.txt
+  - python  src/Crawling.py < testData.txt
+
+
 
 
