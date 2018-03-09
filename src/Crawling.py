@@ -11,14 +11,15 @@ import Crawler
 scanner=Crawler.Spider()
 
 
-
-
-
+#init setting
 gradeDisable=True
 safemode=False
 
 
-# Deal with the param
+
+
+
+# Deal with the arguments
 if(len(sys.argv)>1):
     if sys.argv[1] == "-g":
         gradeDisable=False
@@ -43,10 +44,12 @@ else:
 
 
 
-Crawler.Spider.user = input("What is your K number ?")
 # get K number
 
+Crawler.Spider.user = input("What is your K number ?")
 
+
+#get password
 if safemode == True:
     Crawler.Spider.passw = getpass.getpass()
 
@@ -55,11 +58,10 @@ else:
 
 
 
-#get password
 
 
 
-#get crweler to work
+#run the crawler
 process = CrawlerProcess()
 process.crawl(scanner)
 process.start()
@@ -91,7 +93,7 @@ process.start()
 # print("++++++++++++++++++++++++++++++++++++++++++++++++++++++++++")
 
 
-
+# print the course table
 def printCourseTable():
     course_table = PrettyTable(["No.", "Courses"])
     for i in range(0, len(scanner.getCourse())):
@@ -101,7 +103,7 @@ def printCourseTable():
     pass
 
 
-
+# print the grade table
 def printGradeTable():
     course_table = PrettyTable(["Course", "Grade"])
     for i in range(0, len(scanner.getCourse())):
@@ -112,9 +114,11 @@ def printGradeTable():
 
 
 
+
 # by default only print the course
 print("The Course you are doing ")
 printCourseTable()
+
 
 print("\n")
 
