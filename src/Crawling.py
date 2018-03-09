@@ -165,14 +165,11 @@ class Crawl:
 pass
 
 
+a=Crawl
+a.safeMode=False
+a.crawling()
 
-### following code are NOT for user to use to run the program
 
-# Test Mode
-if sys.argv[1] == "-2963bb1527ee05d267d578d424d4da34":
-    a=Crawl()
-    a.safeMode=False
-    a.crawling()
 
 
 
