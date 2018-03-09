@@ -74,7 +74,7 @@ Password:
 Following output is then generater(Sample data) 
 The Course you are doing 
 
-```shell
+```text
 +-----+------------------------------------------------------------------------------+
 | No. |                                   Courses                                    |
 +-----+------------------------------------------------------------------------------+
@@ -164,7 +164,7 @@ GNU General Public License v3.0
 ## Contact me
 
 <a href="mailto:contact@fzhang.co.uk?subject=Contact From github">contact@fzhang.co.uk</a>
-[open a issue ](https://github.com/FortyIX/Keats-Crawler/issues)
+Or [open a issue ](https://github.com/FortyIX/Keats-Crawler/issues)
 
 
 
