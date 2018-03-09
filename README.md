@@ -36,14 +36,19 @@ $ git clone https://github.com/FortyIX/Keats-Crawler
 
 ## Usage 
 
+> Please note that the grade of users will not be printed unless it is specified 
+
 ```shell
-$ python Crawling.py 
+$ python Crawling.py [-g] [-s]
 ```
-This will run the program but print only the course you are taking. For the protection of user privacy, the grade of the user will not be printed unless it is specified by using parameter -g
 
+Options: 
+```
+-g: show the grades of the user, grade is hidden by default 
+-s: Safe mode, you password will not be shown while you type them on the termial 
 
-```shell
-$ python Crawling.py -g
+No Argument: grade will not be shown and safe mode will be off
+
 ```
 </br>
 
@@ -51,7 +56,7 @@ $ python Crawling.py -g
 
 By running 
 ```shell
-$ python Crawling.py -g
+$ python Crawling.py -g -s 
 ```
 </br>
  you will be asking to verify your identity first by typing in your K number and password 
