@@ -71,11 +71,24 @@ def printGradeTable():
     pass
 
 
+
+# by default only print the course
 print("The Course you are doing ")
 printCourseTable()
+
 print("\n")
-print("and Your Grade")
-printGradeTable()
+
+
+if(len(sys.argv) > 1 ):
+    if(sys.argv[1]=="-g"):
+       print("and Your Grade")
+       printGradeTable()
+
+
+
+
+
+
 
 
 
