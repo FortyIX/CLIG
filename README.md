@@ -36,14 +36,19 @@ $ git clone https://github.com/FortyIX/Keats-Crawler
 
 ## Usage 
 
+> Please note that the grade of users will not be printed unless it is specified 
+
 ```shell
-$ python Crawling.py 
+$ python Crawling.py [-g] [-s]
 ```
-This will run the program but print only the course you are taking. For the protection of user privacy, the grade of the user will not be printed unless it is specified by using parameter -g
 
+Options: 
+```
+-g: show the grades of the user, grade is hidden by default 
+-s: Safe mode, you password will not be shown while you type them on the termial 
 
-```shell
-$ python Crawling.py -g
+No Argument: grade will not be shown and Safe mode will be off
+
 ```
 </br>
 
@@ -51,7 +56,7 @@ $ python Crawling.py -g
 
 By running 
 ```shell
-$ python Crawling.py -g
+$ python Crawling.py -g -s 
 ```
 </br>
  you will be asking to verify your identity first by typing in your K number and password 
@@ -61,7 +66,7 @@ What is your K number ?"kxxxxxxxxx"
 Password: 
 
 ```
-> Your password will not be shown while your typing for security reason
+> Your password will not be shown while your typing in Safe Mode
 
 
 </br></br>
@@ -69,7 +74,7 @@ Password:
 Following output is then generater(Sample data) 
 The Course you are doing 
 
-```shell
+```text
 +-----+------------------------------------------------------------------------------+
 | No. |                                   Courses                                    |
 +-----+------------------------------------------------------------------------------+
@@ -132,7 +137,7 @@ and Your Grade
 
 ## Safety Notice 
 
-- If you are interested in use this tool, pleas download ONLY from here, as the version you download from elsewhere may have been modified with virus or other unsafe addons, MD5 Key is available for you to validate the program, which can be found in the section below
+- If you are interested in use this tool, pleas download ONLY from here, as the version you download from elsewhere may have been modified with virus or other unsafe addons
 
 - I am NOT responible for the lost of any K number if they are not downloaded directly from here 
 
@@ -142,13 +147,24 @@ and Your Grade
 
 ## License
 
+FortyIX/Keats-Crawler is licensed under the
+GNU General Public License v3.0
 
 </br>
 
 
 ## Contrubtion Notice
 
+- Whatever package you used, please add the dependencies in requirement.text
+- Please email me for any change made in your use 
+
+
 </br>
+
+## Contact me
+
+<a href="mailto:contact@fzhang.co.uk?subject=Contact From github">contact@fzhang.co.uk</a>
+Or [open a issue ](https://github.com/FortyIX/Keats-Crawler/issues)
 
 
 
