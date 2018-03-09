@@ -14,7 +14,7 @@ script:
 
   # Use a special key to trigger the testing mode of the program
   - python src/Crawling.py -2963bb1527ee05d267d578d424d4da34
-  - python src/Crawling.py < testData.txt
+  - python src/Crawling.py -2963bb1527ee05d267d578d424d4da34 < testData.txt
 
 
 
