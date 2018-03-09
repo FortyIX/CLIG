@@ -10,9 +10,9 @@ class Spider(scrapy.Spider):
     start_urls = ['https://login-keats.kcl.ac.uk/']
     user = ""
     passw = ""
-    list_1 = []
-    list_2 = []
-    list_3 = []
+    course_list = []
+    grade_title_list = []
+    grade_marks_list = []
 
     def parse(self, response):
 
@@ -25,7 +25,7 @@ class Spider(scrapy.Spider):
         for tab in response.css('div[id*="course"]'):
             PATH = '.title a::text'
 
-            self.list_1.append(tab.css(PATH).extract_first())
+            self.course_list.append(tab.css(PATH).extract_first())
 
         return scrapy.Request("https://keats.kcl.ac.uk/grade/report/overview/index.php",
                               callback=self.parse_grade_page)
@@ -37,26 +37,33 @@ class Spider(scrapy.Spider):
             PATH_2 = 'a::text'
             PATH_3 = 'td[id*="grade-report-overview"]::text'
 
-            self.list_2.append(tab2.css(PATH_2).extract_first())
-            self.list_3.append(tab2.css(PATH_3).extract_first())
-
-        self.showThings()
-
-    def getList(self):
-        return self.list_1
-
-    def getList2(self):
-        return self.list_2
-
-    def getAc(self):
-        return self.user, self.passw
+            self.grade_title_list.append(tab2.css(PATH_2).extract_first())
+            self.grade_marks_list.append(tab2.css(PATH_3).extract_first())
 
 
+        # DEBUG
+        # self.showThings()
 
-    def showThings(self):
+    def getCourse(self):
+        return self.course_list
 
-        print(self.list_2)
-        print(self.list_3)
+    def getGradeTitle(self):
+        return self.grade_title_list
+
+    def getGradeMarks(self):
+        return self.grade_marks_list
+
+
+    # DEBUG
+    # def getAc(self):
+    #     return self.user, self.passw
+
+
+    # DEBUG
+    # def showThings(self):
+    #
+    #     print(self.grade_title_list)
+    #     print(self.grade_marks_list)
 
 
 
