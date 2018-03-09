@@ -42,7 +42,7 @@ $ git clone https://github.com/FortyIX/Keats-Crawler
 > Please note that the grade of users will not be printed unless it is specified 
 
 ```shell
-$ python Crawling.py [-g] [-s]
+$ python launch.py [-g] [-s]
 ```
 
 Options: 
