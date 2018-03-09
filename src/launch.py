@@ -1,6 +1,7 @@
 from Crawling import  Crawling
 
 
+# Start point of the application
 
 def main():
     spider = Crawling()

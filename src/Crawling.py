@@ -9,17 +9,25 @@ import Crawler
 
 
 class Crawling:
+    # Init the Crawler object
     scanner = Crawler.Spider()
+
+    # init setting for the application
     gradeDisable = False
-    safemode = True
+    safeMode = True
+
+
 
     def __init__(self):
         # init the spider instance
         self.scanner = Crawler.Spider()
 
-        # init setting
+        # following fine isnt needed
+        # but i kept it there to make it like how other languages work
         self.gradeDisable = True
-        self.safemode = False
+        self.safeMode = False
+
+    pass
 
 
 
@@ -32,7 +40,7 @@ class Crawling:
             course_table.add_row([i, self.scanner.getCourse()[i]])
 
         print(course_table)
-        pass
+    pass
 
 
     # print the grade table
@@ -42,9 +50,10 @@ class Crawling:
             course_table.add_row([self.scanner.getGradeTitle()[i], self.scanner.getGradeMarks()[i]])
 
         print(course_table)
-        pass
+    pass
 
 
+    # Print the final result which are two table combined / is the course table
     def printResult(self):
 
         # uncommont the following code to use the orginal output
@@ -52,7 +61,7 @@ class Crawling:
         # print("++++++++++++++++++++++++++++++++++++++++++++++++++++++++++")
         # print("Course List")
         # print("++++++++++++++++++++++++++++++++++++++++++++++++++++++++++")
-        # for i in scanner.getCourse():
+        # for i in self.scanner.getCourse():
         #     print("\b"+"\b"+ i )
         #     print("|++++++++++++++++++++++++++++++++++++++++++++++++++++++++|")
         #
@@ -61,10 +70,10 @@ class Crawling:
 
         #
         # print("++++++++++++++++++++++++++++++++++++++++++++++++++++++++++")
-        # print("Course List")
+        # print("Grades ")
         # print("++++++++++++++++++++++++++++++++++++++++++++++++++++++++++")
         # for i in range(0,len(scanner.getGradeTitle())):
-        #     print("\b"+"\b"+ scanner.getGradeTitle()[i]+"\b"+"\b"+scanner.getGradeMarks()[i])
+        #     print("\b"+"\b"+ self.scanner.getGradeTitle()[i]+"\b"+"\b"+self.scanner.getGradeMarks()[i])
         #     print("|++++++++++++++++++++++++++++++++++++++++++++++++++++++++|")
         #
         # print()
@@ -81,7 +90,7 @@ class Crawling:
             print("and Your Grade")
             self.printGradeTable()
 
-            pass
+    pass
 
 
 
@@ -93,14 +102,14 @@ class Crawling:
                 self.gradeDisable = False
                 if len(sys.argv) > 2:
                     if sys.argv[2] == "-s":
-                        self.safemode = False
+                        self.safeMode = False
                     else:
-                        self.safemode = True
+                        self.safeMode = True
                 else:
-                    self.safemode = True
+                    self.safeMode = True
 
             elif sys.argv[1] == "-s":
-                self.safemode = False
+                self.safeMode = False
                 if len(sys.argv) > 2:
                     if sys.argv[2] == "-g":
                         self.gradeDisable = False
@@ -108,7 +117,9 @@ class Crawling:
                         self.fgradeDisable = True
         else:
             self.gradeDisable = True
-            self.safemode = True
+            self.safeMode = True
+
+    pass
 
 
 
@@ -122,11 +133,13 @@ class Crawling:
         self.parseArguments()
 
         # get password
-        if self.safemode == True:
+        if self.safeMode == True:
             Crawler.Spider.passw = getpass.getpass()
 
         else:
             Crawler.Spider.passw = input("What is your password ?")
+
+    pass
 
 
 
@@ -137,12 +150,16 @@ class Crawling:
         process.crawl(self.scanner)
         process.start()
 
+    pass
+
 
 
     def crawling(self):
         self.getUserInfo()
         self.startCrawling()
         self.printResult()
+
+    pass
 
 
 
