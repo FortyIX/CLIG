@@ -163,7 +163,7 @@ GNU General Public License v3.0
 
 ## Contact me
 
-- [contact@fzhang.co.uk](mailto:contact@fzhang.co.uk?subject=Contact from  Github)
+<a href="mailto:contact@fzhang.co.uk?subject=Contact From github">contact@fzhang.co.uk</a>
 - open a issue 
 
 
