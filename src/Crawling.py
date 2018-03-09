@@ -14,7 +14,7 @@ class Crawl:
 
     # init setting for the application
     gradeDisable = False
-    safeMode = True
+    safeMode = False
 
 
 
@@ -102,14 +102,14 @@ class Crawl:
                 self.gradeDisable = False
                 if len(sys.argv) > 2:
                     if sys.argv[2] == "-s":
-                        self.safeMode = False
-                    else:
                         self.safeMode = True
+                    else:
+                        self.safeMode = False
                 else:
-                    self.safeMode = True
+                    self.safeMode = False
 
             elif sys.argv[1] == "-s":
-                self.safeMode = False
+                self.safeMode = True
                 if len(sys.argv) > 2:
                     if sys.argv[2] == "-g":
                         self.gradeDisable = False
@@ -117,7 +117,7 @@ class Crawl:
                         self.fgradeDisable = True
         else:
             self.gradeDisable = True
-            self.safeMode = True
+            self.safeMode = False
 
     pass
 
@@ -163,11 +163,6 @@ class Crawl:
 
 
 pass
-
-
-a=Crawl
-a.safeMode=False
-a.crawling()
 
 
 
