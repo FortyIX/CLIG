@@ -12,9 +12,49 @@ scanner=Crawler.Spider()
 
 
 
-Crawler.Spider.user=input("What is your K number ?")
-#get K number
-Crawler.Spider.passw=getpass.getpass()
+
+
+gradeDisable=True
+safemode=False
+
+
+# Deal with the param
+if(len(sys.argv)>1):
+    if sys.argv[1] == "-g":
+        gradeDisable=False
+        if len(sys.argv) > 2:
+            if sys.argv[2]=="-s":
+                safemode=True
+            else:
+                safemode=False
+        else:
+            safemode=False
+
+    elif sys.argv[1] == "-s":
+        safemode=True
+        if len(sys.argv) > 2:
+            if sys.argv[2]=="-g":
+                gradeDisable=False
+            else:
+                gradeDisable=True
+else:
+    gradeDisable=True
+    safemode=False
+
+
+
+Crawler.Spider.user = input("What is your K number ?")
+# get K number
+
+
+if safemode == True:
+    Crawler.Spider.passw = getpass.getpass()
+
+else:
+    Crawler.Spider.passw = input("What is your password ?")
+
+
+
 #get password
 
 
@@ -79,10 +119,9 @@ printCourseTable()
 print("\n")
 
 
-if(len(sys.argv) > 1 ):
-    if(sys.argv[1]=="-g"):
-       print("and Your Grade")
-       printGradeTable()
+if(gradeDisable==False):
+    print("and Your Grade")
+    printGradeTable()
 
 
 
