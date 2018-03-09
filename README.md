@@ -142,7 +142,7 @@ and Your Grade
 
 - If you are interested in use this tool, pleas download ONLY from here, as the version you download from elsewhere may have been modified with virus or other unsafe addons
 
-- I am NOT responible for the lost of any K number if they are not downloaded directly from here 
+- I am NOT responible for the lost of any Student account if the copy other than the one here on github is used
 
 - It is a crime to modifiy the program for storing other user's account 
 
