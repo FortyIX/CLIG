@@ -13,6 +13,6 @@ install: pip install -r requirements.txt
 script:
 
   - python  src/launch.py -s
-  - python  src/Crawling.py < testData.txt
+  - python  src/launch.py < testData.txt
 
 
