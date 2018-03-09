@@ -6,14 +6,13 @@ python:
 # command to install dependencies
 
 
-
 install: pip install -r requirements.txt
 
 
 
 script:
 
-  - python  src/main.py
-  - python  src/run.py < testData.txt
+  - python  src/Crawler.py
+  - python  src/Crawling.py < testData.txt
 
 

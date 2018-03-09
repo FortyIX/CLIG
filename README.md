@@ -10,30 +10,66 @@ such as Course and Grades information with no need to open the browser. Student 
 &nbsp;
 
 
-### Development Progress
+## Development Progress
 
 - [x] Log into Keats with code (with pre defined password) 
 - [x] Fetch Course Information and print out 
 - [x] Log into Keats with code (with users input) 
-- [ ] Fetch Grades Information and print out 
+- [x] Fetch Grades Information and print out 
 - [ ] Buiding Graphic User Interface 
 
+</br>
 
+## Installation
 
-### Installation
-
-When you run the program, you will be asked to input your account detail 
+1. Please install the dependencies
+```shell
+$ pip install scrapy
+$ pip install prettytable
 ```
-What is your K number ?kxxxxxxx
-and your password?xxxxxxxxx
+
+2. Clone the repository 
+```shell
+$ git clone https://github.com/FortyIX/Keats-Crawler
+```
+</br>
+
+## Usage 
+
+```shell
+$ python Crawling.py 
+```
+This will run the program but print only the course you are taking. For the protection of user privacy, the grade of the user will not be printed unless it is specified by using parameter -g
+
+
+```shell
+$ python Crawling.py -g
+```
+</br>
+
+## Usage Sample 
+
+By running 
+```shell
+$ python Crawling.py -g
+```
+</br>
+ you will be asking to verify your identity first by typing in your K number and password 
+
+```shell
+What is your K number ?"kxxxxxxxxx"
+Password: 
 
 ```
+> Your password will not be shown while your typing for security reason
 
 
-after that you will get the output, following is an example of the output (excluding for Scrapy Output)
+</br></br>
 
-```
+Following output is then generater(Sample data) 
 The Course you are doing 
+
+```shell
 +-----+------------------------------------------------------------------------------+
 | No. |                                   Courses                                    |
 +-----+------------------------------------------------------------------------------+
@@ -87,13 +123,34 @@ and Your Grade
 ```
 
 
+## Known Issue
+- Program won't tell users whether their password and username are typed correctly or not, it will output nothing when any of the information is incorrected
+- Does not have a Graphic user interface
+
+
+</br>
+
+## Safety Notice 
+
+- If you are interested in use this tool, pleas download ONLY from here, as the version you download from elsewhere may have been modified with virus or other unsafe addons, MD5 Key is available for you to validate the program, which can be found in the section below
+
+- I am NOT responible for the lost of any K number if they are not downloaded directly from here 
+
+- It is a crime to modifiy the program for storing other user's account 
+
+
+
+## License
+
+
+</br>
+
+
+## Contrubtion Notice
+
+</br>
 
 
 
 
-
-### Do you want to make it better ? 
-
-* **Pull Request**
-* Email me at **fuzhang.work@gmail.com**
 
