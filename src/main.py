@@ -1,18 +1,18 @@
 import scrapy
+from scrapy.crawler import CrawlerProcess
+from twisted.internet import reactor
 
 from loginform import fill_login_form
 
 
 class Spider(scrapy.Spider):
-
-
-
     name = 'login'
     start_urls = ['https://login-keats.kcl.ac.uk/']
-    user=""
-    passw=""
-    list_1=[]
-
+    user = ""
+    passw = ""
+    list_1 = []
+    list_2 = []
+    list_3 = []
 
     def parse(self, response):
 
@@ -22,15 +22,44 @@ class Spider(scrapy.Spider):
 
     def after_login(self, response):
 
-            for tab in response.css('div[id*="course"]'):
-                PATH = '.title a::text'
+        for tab in response.css('div[id*="course"]'):
+            PATH = '.title a::text'
 
-                self.list_1.append(tab.css(PATH).extract_first())
+            self.list_1.append(tab.css(PATH).extract_first())
 
-           # self.showThings()
+        return scrapy.Request("https://keats.kcl.ac.uk/grade/report/overview/index.php",
+                              callback=self.parse_grade_page)
+
+    def parse_grade_page(self, response):
+
+        print("debug1")
+        for tab2 in response.css('tr[id*="grade-report-overview"]'):
+            PATH_2 = 'a::text'
+            PATH_3 = 'td[id*="grade-report-overview"]::text'
+
+            self.list_2.append(tab2.css(PATH_2).extract_first())
+            self.list_3.append(tab2.css(PATH_3).extract_first())
+
+        self.showThings()
 
     def getList(self):
         return self.list_1
+
+    def getList2(self):
+        return self.list_2
+
+    def getAc(self):
+        return self.user, self.passw
+
+
+
+    def showThings(self):
+
+        print(self.list_2)
+        print(self.list_3)
+
+
+
 
 
 
