@@ -7,12 +7,21 @@ from loginform import fill_login_form
 
 class Spider(scrapy.Spider):
     name = 'login'
+
+    # init url to crawl
     start_urls = ['https://login-keats.kcl.ac.uk/']
+
+
+    # login infomration
     user = ""
     passw = ""
+
+
+    #List for store info
     course_list = []
     grade_title_list = []
     grade_marks_list = []
+
 
     def parse(self, response):
 
@@ -20,6 +29,15 @@ class Spider(scrapy.Spider):
 
         return scrapy.FormRequest(url, method=method, formdata=args, callback=self.after_login)
 
+
+
+    ''' 
+    this function will run as the callback of the login request, once the logging in process
+    is finished, this function will be called to crawl and fetch the inforamtion about the course.
+    after the course information is fetched, then another page which is the grade page will be crawled
+    too
+    
+    '''
     def after_login(self, response):
 
         for tab in response.css('div[id*="course"]'):
@@ -29,6 +47,14 @@ class Spider(scrapy.Spider):
 
         return scrapy.Request("https://keats.kcl.ac.uk/grade/report/overview/index.php",
                               callback=self.parse_grade_page)
+
+
+
+    '''
+    This is function being used on fetching information of the grade
+    it is also the callback function of the scrapy request from the previous function 
+    
+    '''
 
     def parse_grade_page(self, response):
 
@@ -43,6 +69,8 @@ class Spider(scrapy.Spider):
 
         # DEBUG
         # self.showThings()
+
+
 
     def getCourse(self):
         return self.course_list

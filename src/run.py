@@ -2,15 +2,19 @@
 
 from scrapy.crawler import CrawlerProcess
 from prettytable import PrettyTable
-import os
+import getpass
+import sys
 
 import main
 
+#init the spider instance
 scanner=main.Spider()
+
+
 
 main.Spider.user=input("What is your K number ?")
 #get K number
-main.Spider.passw=input("and your password?")
+main.Spider.passw=getpass.getpass()
 #get password
 
 
@@ -21,6 +25,10 @@ process.crawl(scanner)
 process.start()
 
 
+
+
+# uncommont the following code to use the orginal output
+# Please only use the original output when prettyTable package is unavailable
 # print("++++++++++++++++++++++++++++++++++++++++++++++++++++++++++")
 # print("Course List")
 # print("++++++++++++++++++++++++++++++++++++++++++++++++++++++++++")
@@ -65,9 +73,11 @@ def printGradeTable():
 
 print("The Course you are doing ")
 printCourseTable()
-print("/n")
+print("\n")
 print("and Your Grade")
 printGradeTable()
+
+
 
 
 
