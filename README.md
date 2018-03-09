@@ -18,19 +18,9 @@ such as Course and Grades information with no need to open the browser. Student 
 - [ ] Fetch Grades Information and print out 
 - [ ] Buiding Graphic User Interface 
 
-Following code in the **[run.py](https://github.com/FortyIX/Keats-crawler/blob/master/run.py)** defines the layout of the course information shown on the console
 
-```python
-print("++++++++++++++++++++++++++++++++++++++++++++++++++++++++++")
-for i in Spider.getList(Spider):
-    print("\b"+"\b"+ i )
-    print("|++++++++++++++++++++++++++++++++++++++++++++++++++++++++|")
 
-print()
-print("++++++++++++++++++++++++++++++++++++++++++++++++++++++++++")
-```
-
-### How to Use it 
+### Installation
 
 When you run the program, you will be asked to input your account detail 
 ```
