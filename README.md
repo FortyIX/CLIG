@@ -10,30 +10,65 @@ such as Course and Grades information with no need to open the browser. Student 
 &nbsp;
 
 
-### Development Progress
+## Development Progress
 
 - [x] Log into Keats with code (with pre defined password) 
 - [x] Fetch Course Information and print out 
 - [x] Log into Keats with code (with users input) 
-- [ ] Fetch Grades Information and print out 
+- [x] Fetch Grades Information and print out 
 - [ ] Buiding Graphic User Interface 
 
+</br>
 
+## Installation
 
-### Installation
-
-When you run the program, you will be asked to input your account detail 
+1. Please install the dependencies
+```shell
+$ pip install scrapy
+$ pip install prettytable
 ```
-What is your K number ?kxxxxxxx
-and your password?xxxxxxxxx
+
+2. Clone the repository 
+```shell
+$ git clone https://github.com/FortyIX/Keats-Crawler
+```
+</br>
+
+## Usage 
+
+```shell
+$ python Crawling.py 
+```
+This will run the program but print only the course you are taking. For the protection of user privacy, the grade of the user will not be printed unless it is specified by using parameter -g
+
+
+```shell
+$ python Crawling.py -g
+```
+</br>
+
+## Usage Sample 
+
+By running 
+```shell
+$ python Crawling.py -g
+```
+</br>
+ you will be asking to verify your identity first by typing in your K number and password 
+
+```shell
+What is your K number ?"kxxxxxxxxx"
+Password: 
+
+```shell
+> Your password will not be shown while your typing for security reason
 
 ```
+</br></br>
 
-
-after that you will get the output, following is an example of the output (excluding for Scrapy Output)
-
-```
+Following output is then generater(Sample data) 
 The Course you are doing 
+```
 +-----+------------------------------------------------------------------------------+
 | No. |                                   Courses                                    |
 +-----+------------------------------------------------------------------------------+
@@ -88,12 +123,4 @@ and Your Grade
 
 
 
-
-
-
-
-### Do you want to make it better ? 
-
-* **Pull Request**
-* Email me at **fuzhang.work@gmail.com**
 
