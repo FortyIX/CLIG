@@ -137,7 +137,7 @@ and Your Grade
 
 ## Safety Notice 
 
-- If you are interested in use this tool, pleas download ONLY from here, as the version you download from elsewhere may have been modified with virus or other unsafe addons, MD5 Key is available for you to validate the program, which can be found in the section below
+- If you are interested in use this tool, pleas download ONLY from here, as the version you download from elsewhere may have been modified with virus or other unsafe addons
 
 - I am NOT responible for the lost of any K number if they are not downloaded directly from here 
 
@@ -147,13 +147,24 @@ and Your Grade
 
 ## License
 
+FortyIX/Keats-Crawler is licensed under the
+GNU General Public License v3.0
 
 </br>
 
 
 ## Contrubtion Notice
 
+- Whatever package you used, please add the dependencies in requirement.text
+- Please email me for any change made in your use 
+
+
 </br>
+
+## Contact me
+
+- [contact@fzhang.co.uk](mailto:contact@fzhang.co.uk?subject=Contact from  Github)
+- open a issue 
 
 
 
