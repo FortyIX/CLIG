@@ -60,15 +60,16 @@ $ python Crawling.py -g
 What is your K number ?"kxxxxxxxxx"
 Password: 
 
-```shell
+```
 > Your password will not be shown while your typing for security reason
 
-```
+
 </br></br>
 
 Following output is then generater(Sample data) 
 The Course you are doing 
-```
+
+```shell
 +-----+------------------------------------------------------------------------------+
 | No. |                                   Courses                                    |
 +-----+------------------------------------------------------------------------------+
@@ -120,6 +121,35 @@ and Your Grade
 +------------------------------------------------------------------------------+-------+
 
 ```
+
+
+## Known Issue
+- Program won't tell users whether their password and username are typed correctly or not, it will output nothing when any of the information is incorrected
+- Does not have a Graphic user interface
+
+
+</br>
+
+## Safety Notice 
+
+- If you are interested in use this tool, pleas download ONLY from here, as the version you download from elsewhere may have been modified with virus or other unsafe addons, MD5 Key is available for you to validate the program, which can be found in the section below
+
+- I am NOT responible for the lost of any K number if they are not downloaded directly from here 
+
+- It is a crime to modifiy the program for storing other user's account 
+
+
+
+## License
+
+
+</br>
+
+
+## Contrubtion Notice
+
+</br>
+
 
 
 
