@@ -47,7 +47,7 @@ Options:
 -g: show the grades of the user, grade is hidden by default 
 -s: Safe mode, you password will not be shown while you type them on the termial 
 
-No Argument: grade will not be shown and safe mode will be off
+No Argument: grade will not be shown and Safe mode will be off
 
 ```
 </br>
@@ -66,7 +66,7 @@ What is your K number ?"kxxxxxxxxx"
 Password: 
 
 ```
-> Your password will not be shown while your typing for security reason
+> Your password will not be shown while your typing in Safe Mode
 
 
 </br></br>
