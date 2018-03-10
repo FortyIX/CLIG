@@ -59,7 +59,7 @@ No Argument: grade will not be shown and Safe mode will be off
 
 By running 
 ```shell
-$ python Crawling.py -g -s 
+$ python launch.py -g -s 
 ```
 </br>
  you will be asking to verify your identity first by typing in your K number and password 
