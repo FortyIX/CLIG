@@ -37,7 +37,7 @@ such as Course and Grades information with no need to open the browser. Student 
 $ sudo easy_install pip
 
 ```
-  > For window, pleas refer to [pip website](https://pip.pypa.io/en/stable/installing/#upgrading-pip) to install and upgrade
+  > For window, pleas refer to [pip website](https://pip.pypa.io/en/stable/installing/) to install and upgrade
 
 </br>
 
