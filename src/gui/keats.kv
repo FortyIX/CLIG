@@ -1,0 +1,90 @@
+#:kivy 1.9.1
+
+
+<LoginScreen>:
+    FloatLayout:
+        GridLayout:
+            rows: 3
+            cols: 2
+            padding: (self.parent.height-3*28)/2
+            row_default_height: 28
+            row_force_default: True
+
+
+
+            Label:
+                text: 'username'
+
+            TextInput:
+                id: input_username            
+                multiline: False
+                write_tab: False
+                
+            Label:
+                text: 'passwird'
+
+            TextInput:
+                id: input_password
+                write_tab: False
+                multiline: False
+                # password_mask: "*"
+                password: True
+
+            Button:
+                text: 'login'
+                on_press: root.login() 
+
+            Button:
+                text: 'register'
+
+             
+            
+<MyViewClass>:
+    orientation: 'horizontal'
+    padding: cm(1)
+
+    Label:
+        text: root.name
+        size_hint_x: 0.85
+        text_size: self.size
+        valign: 'middle'
+    Label:
+        text: root.grade
+        size_hint_x: 0.15
+        text_size: self.size
+        halign: 'right'
+        valign: 'middle'
+
+<GradesScreen>:
+    BoxLayout:
+        orientation: 'vertical'
+        BoxLayout:
+            orientation: 'horizontal'
+            size_hint_y: None
+            height: "40dp"
+            Button:
+                text: 'Show grades'
+                on_press: root.grades()
+
+            Button:
+                text: 'Show modules'
+                on_press: root.modules()
+
+        RecycleView:
+            id: grades
+            viewclass: 'MyViewClass'
+            RecycleBoxLayout:
+                orientation: 'vertical'
+                default_size: None, dp(56)
+                default_size_hint: 1, None
+                size_hint_y: None
+                height: self.minimum_height
+
+
+<SettingsScreen>:
+    BoxLayout:
+        Button:
+            text: 'My settings button'
+        Button:
+            text: 'Back to menu'
+            on_press: root.manager.current = 'menu'
