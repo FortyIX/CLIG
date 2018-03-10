@@ -11,7 +11,13 @@ such as Course and Grades information with no need to open the browser. Student 
 &nbsp;
 &nbsp;
 &nbsp;
+## Features
+- No browser needed, what you need is only a termial that comes with the operating system 
+- Lower internet usage, Becuase the style sheet of the page is not needed ,therefore, it consume less intetnet
+- Work perfectly within poor internet. as no style sheet needed
+- quick, get all information you need in instant with only one line of command 
 
+</br>
 
 ## Development Progress
 
@@ -24,6 +30,16 @@ such as Course and Grades information with no need to open the browser. Student 
 </br>
 
 ## Installation
+
+0. Install pip, a python package manager
+
+```shell
+$ sudo easy_install pip
+
+```
+  > For window, pleas refer to [pip website](https://pip.pypa.io/en/stable/installing/#upgrading-pip) to install and upgrade
+
+</br>
 
 1. Please install the dependencies
 ```shell
