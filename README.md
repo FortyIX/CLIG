@@ -90,10 +90,11 @@ Password:
 
 </br></br>
 
-Following output is then generater(Sample data) 
-The Course you are doing 
+Following output is then generated(Sample data) 
+
 
 ```text
+The Course you are doing 
 +-----+------------------------------------------------------------------------------+
 | No. |                                   Courses                                    |
 +-----+------------------------------------------------------------------------------+
@@ -148,7 +149,7 @@ and Your Grade
 
 
 ## Known Issue
-- Program won't tell users whether their password and username are typed correctly or not, it will output nothing when any of the information is incorrected
+- Program won't tell users whether their password and username are typed correctly or not, it will output nothing when any of the information is incorrect
 - Does not have a Graphic user interface
 
 
