@@ -1,7 +1,6 @@
 
 
 from scrapy.crawler import CrawlerProcess
-from prettytable import PrettyTable
 import getpass
 import sys
 
@@ -35,6 +34,7 @@ class Crawl:
 
     # print the course table
     def printCourseTable(self):
+        from prettytable import PrettyTable 
         course_table = PrettyTable(["No.", "Courses"])
         for i in range(0, len(self.scanner.getCourse())):
             course_table.add_row([i, self.scanner.getCourse()[i]])
@@ -45,6 +45,7 @@ class Crawl:
 
     # print the grade table
     def printGradeTable(self):
+        from prettytable import PrettyTable    
         course_table = PrettyTable(["Course", "Grade"])
         for i in range(0, len(self.scanner.getCourse())):
             course_table.add_row([self.scanner.getGradeTitle()[i], self.scanner.getGradeMarks()[i]])
