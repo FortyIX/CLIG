@@ -57,8 +57,6 @@ class Spider(scrapy.Spider):
     '''
 
     def parse_grade_page(self, response):
-
-        print("debug1")
         for tab2 in response.css('tr[id*="grade-report-overview"]'):
             PATH_2 = 'a::text'
             PATH_3 = 'td[id*="grade-report-overview"]::text'
