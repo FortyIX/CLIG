@@ -10,7 +10,7 @@ A program which intends to help the student from King's College London to quickl
 &nbsp;
 &nbsp;
 
-**BY USING THIS SOFTWARE, YOU ARE AGREED WITH MY END USER AGREEMENT**
+**BY USING THIS SOFTWARE, YOU ARE AGREED WITH MY [END-USER & FURTHER DEVELOPMENT]()**
 
 ## Notifications
 
