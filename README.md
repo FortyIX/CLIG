@@ -4,18 +4,32 @@
 
 
 
-A program which crawling Keats which is a student portal of KCL to fetch some usful informaition
-such as Course and Grades information with no need to open the browser. Student ID and password are required
+A program which intends to help the student from King's College London to quickly look up their selected modules and their grade using their Kings' ID number 
+&nbsp;
+&nbsp;
+&nbsp;
+&nbsp;
+
+**BY USING THIS SOFTWARE, YOU ARE AGREED WITH MY END USER AGREEMENT**
+
+## Notifications
+
+- A basic GUI using kivy has been developed but it is not yet stable, it's recommanded to still use command line 
+
+
 
 &nbsp;
 &nbsp;
 &nbsp;
 &nbsp;
+
+
 ## Features
 - No browser needed, what you need is only a termial that comes with the operating system 
 - Lower internet usage, Becuase the style sheet of the page is not needed ,therefore, it consume less intetnet
 - Work perfectly within poor internet. as no style sheet needed
 - quick, get all information you need in instant with only one line of command 
+- safe, with safe mode on, password will be hiden
 
 </br>
 
@@ -157,9 +171,10 @@ and Your Grade
 
 ## Safety Notice 
 
+
 - If you are interested in use this tool, pleas download ONLY from here, as the version you download from elsewhere may have been modified with virus or other unsafe addons
 
-- I am NOT responible for the lost of any Student account if the copy other than the one here on github is used
+- I am NOT responible for the lost of any Student account.
 
 - It is a crime to modifiy the program for storing other user's account 
 
