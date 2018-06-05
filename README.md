@@ -10,7 +10,7 @@ A program which intends to help the student from King's College London to quickl
 &nbsp;
 &nbsp;
 
-**BY USING THIS SOFTWARE, YOU ARE AGREED WITH MY [END-USER & FURTHER DEVELOPMENT](https://github.com/FortyIX/Keats-Crawler/blob/master/END-USER%20%26%20FURTHER%20DEVELOPMENT%20AGGREMENT.md)**
+**BY USING THIS SOFTWARE, YOU ARE AGREED WITH MY [END-USER & FURTHER DEVELOPMENT AGGREMENT](https://github.com/FortyIX/Keats-Crawler/blob/master/END-USER%20%26%20FURTHER%20DEVELOPMENT%20AGGREMENT.md)**
 
 ## Notifications
 
