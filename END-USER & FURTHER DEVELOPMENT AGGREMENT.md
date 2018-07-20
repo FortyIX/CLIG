@@ -18,8 +18,8 @@ consider carefully before use this progarm
 
 ### FURTHER DEVELOPMENT 
 - You are not allowed to add any code that could, directly or indirecrly store, transfor, or display user's private information (ID number and password)
-- Please remeber it would breaks college regulation if you use other's ID information in a inproper way
-- You are dealing with other student's private information. alway keep the safety of users' information at the first time, then the functionalities
+- Please remeber it will break college regulations if you use other's ID information in a inproper way
+- You are dealing with other student's private information. alway keep the safety of users' information at first place, then the functionalities
 
 </br>
 
