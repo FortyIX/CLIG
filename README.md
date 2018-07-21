@@ -1,10 +1,10 @@
-<h1 style="text-align: center;">Keats Crawler</h1> 
+<h1 style="text-align: center;">CLIG</h1> 
 
-[![Build Status](https://travis-ci.org/FortyIX/Keats-Crawler.svg?branch=master)](https://travis-ci.org/FortyIX/Keats-Crawler) [![GitHub license](https://img.shields.io/github/license/FortyIX/Keats-Crawler.svg)](https://github.com/FortyIX/Keats-Crawler/blob/master/LICENSE) [![GitHub issues](https://img.shields.io/github/issues/FortyIX/Keats-Crawler.svg)](https://github.com/FortyIX/Keats-Crawler/issues) ![GitHub last commit](https://img.shields.io/github/last-commit/google/skia.svg)  ![GitHub last commit](https://img.shields.io/badge/Dev-Fu%20Zhang-blue.svg)
+[![Build Status](https://travis-ci.org/FortyIX/CLIG.svg?branch=master)](https://travis-ci.org/FortyIX/CLIG) [![GitHub license](https://img.shields.io/github/license/FortyIX/CLIG.svg)](https://github.com/FortyIX/CLIG/blob/master/LICENSE) [![GitHub issues](https://img.shields.io/github/issues/FortyIX/CLIG.svg)](https://github.com/FortyIX/CLIG/issues) ![GitHub last commit](https://img.shields.io/github/last-commit/google/skia.svg)  ![GitHub last commit](https://img.shields.io/badge/Dev-Fu%20Zhang-blue.svg)
 
 
 
-A program which intends to help the student from King's College London to quickly look up their selected modules and their grade using their Kings' ID number 
+CLIG is command line program which intends to help the student from King's College London to quickly look up their selected modules and their grade using their Kings' ID number 
 &nbsp;
 &nbsp;
 &nbsp;
@@ -182,7 +182,7 @@ and Your Grade
 
 ## License
 
-FortyIX/Keats-Crawler is licensed under the
+FortyIX/CLIG is licensed under the
 GNU General Public License v3.0
 
 </br>
@@ -199,7 +199,7 @@ GNU General Public License v3.0
 ## Contact me
 
 <a href="mailto:contact@fzhang.co.uk?subject=Contact From github">contact@fzhang.co.uk</a>
-Or [open a issue ](https://github.com/FortyIX/Keats-Crawler/issues)
+Or [open a issue ](https://github.com/FortyIX/CLIG/issues)
 
 
 
