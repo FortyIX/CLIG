@@ -1,10 +1,10 @@
-<h1 style="text-align: center;">CLIG</h1> 
+<h1 style="text-align: center;">KCLIG</h1> 
 
 [![Build Status](https://travis-ci.org/FortyIX/CLIG.svg?branch=master)](https://travis-ci.org/FortyIX/CLIG) [![GitHub license](https://img.shields.io/github/license/FortyIX/CLIG.svg)](https://github.com/FortyIX/CLIG/blob/master/LICENSE) [![GitHub issues](https://img.shields.io/github/issues/FortyIX/CLIG.svg)](https://github.com/FortyIX/CLIG/issues) ![GitHub last commit](https://img.shields.io/github/last-commit/google/skia.svg)  ![GitHub last commit](https://img.shields.io/badge/Dev-Fu%20Zhang-blue.svg)
 
 
 
-CLIG is command line program which intends to help the student from King's College London to quickly look up their selected modules and their grade using their Kings' ID number 
+KCLIG is command line program which intends to help the student from King's College London to quickly look up their selected modules and their grade using their Kings' ID number 
 &nbsp;
 &nbsp;
 &nbsp;
