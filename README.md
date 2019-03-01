@@ -4,7 +4,7 @@
 
 
 
-KCLIG is command line program which intends to help the student from King's College London to quickly look up their selected modules and their grade using their Kings' ID number 
+KCLIG is command line program which intends to help the student from King's College London to quickly look up their selected modules and their grade using their Kings' ID number. this project has been achived and stop updating. the code is purely for learning purpose
 &nbsp;
 &nbsp;
 &nbsp;
@@ -188,13 +188,7 @@ GNU General Public License v3.0
 </br>
 
 
-## Contrubtion Notice
 
-- Whatever package you used, please add the dependencies in requirement.text
-- Please email me for any change made in your use 
-
-
-</br>
 
 ## Contact me
 
