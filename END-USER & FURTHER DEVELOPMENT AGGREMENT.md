@@ -8,7 +8,8 @@
 
 
 ### PRAVICY PROTECTION
-- This program will never store any of your private information (your ID number and password) in any format at anytime
+- DO ensure that you understand what this code does and ensure that your information will not be stored in in anyway
+- The original program will never store any of your private information (your ID number and password) in any format at anytime
 - it is YOUR responsibility to check if the copy of the code you downloaded has been modified before you type in any of your information 
 - With the safe mode on, your password is not accessible from the command line, it is one time password, no password storing functionality
 - Please remember that this program is still at development stage, far away from the production level of usability, there might be bugs, so please 
