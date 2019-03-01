@@ -8,6 +8,8 @@ KCLIG is command line program which intends to help the student from King's Coll
 
 &nbsp;
 
+**Because it is in development mode, only recommand people who understand programming to use, in order to understand the code and ensure your information will not be stored by the program**
+
 
 &nbsp;
 &nbsp;
